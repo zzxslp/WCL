@@ -1,0 +1,20 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--image_dir data/mimic_abn/img_embeddings_4x4.pt \
+--ann_path data/mimic_abn/cluster_annotation.json \
+--dataset_name mimic_abn \
+--max_seq_length 64 \
+--threshold 3 \
+--batch_size 128 \
+--epochs 30 \
+--save_dir results/mimic_abn \
+--step_size 50 \
+--gamma 0.1 \
+--d_vf 1024 \
+--contra_type 'base' \
+--finetune_lambda 1 \
+--contra_lambda 0.2 \
+--contra_temperature 1 \
+--contra_embed_size 256 \
+--contra_epoch 0 \
+--resume model/mimic_abn.pth \
+--seed 123

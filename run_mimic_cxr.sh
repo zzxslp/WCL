@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+--image_dir data/mimic_cxr/images/ \
+--ann_path data/mimic_cxr/cluster_annotation.json \
+--dataset_name mimic_cxr \
+--max_seq_length 100 \
+--threshold 10 \
+--batch_size 256 \
+--epochs 30 \
+--save_dir results/mimic_cxr \
+--step_size 50 \
+--gamma 0.1 \
+--contra_type 'base' \
+--finetune_lambda 1 \
+--contra_lambda 0.2 \
+--contra_temperature 0.1 \
+--contra_embed_size 256 \
+--contra_epoch 0 \
+--resume model/mimic_cxr.pth \
+--seed 1234
