@@ -28,6 +28,12 @@ Run `bash run_mimic_abn.sh` to train a model on the MIMIC-ABN data.
 
 Run `bash run_mimic_cxr.sh` to train a model on the MIMIC-CXR data.
 
+## Evaluation
+We use public code sources to evaluate our models. 
+
+For CE metrics, please follow [this repo](https://github.com/stanfordmlgroup/chexpert-labeler) to use ChexPert and install relative packages. Then refer to label_on_fly.py and run_label.sh in our chexpert-labeler folder to label your reports (which will generate a csv file with ChexPert labels). In the end, use calculate_metric.py to compute clinical accuracy.
+
+For NLG metrics, please refer to [pycocoevalcap](https://github.com/salaniz/pycocoevalcap).
 
 ## Download Models
 You can download the models we trained for each dataset from [release/pretrained_models](https://drive.google.com/drive/folders/1wokoNJHWh2IN1ywo7t-DKHicZAzwuK2-?usp=sharing).
