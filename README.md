@@ -14,9 +14,11 @@ at Findings of EMNLP-2021.
 ## Datasets
 We use two datasets (MIMIC-ABN and MIMIC-CXR) in the paper.
 
-For `MIMIC-ABN`, you can download the dataset from TODO and then put the files in `data/mimic_abn`.
+For `MIMIC-ABN`, you can download the dataset from [release/mimic_abn](https://drive.google.com/drive/folders/1wokoNJHWh2IN1ywo7t-DKHicZAzwuK2-?usp=sharing) and then put the files in `data/mimic_abn`.
 
-For `MIMIC-CXR`, you can download the dataset from [here](https://drive.google.com/file/d/1DS6NYirOXQf8qYieSVMvqNwuOlgAbM_E/view?usp=sharing) and then put the files in `data/mimic_cxr`.
+For `MIMIC-CXR`, you can download the dataset from [release/mimic_cxr](https://drive.google.com/drive/folders/1wokoNJHWh2IN1ywo7t-DKHicZAzwuK2-?usp=sharing) and then put the files in `data/mimic_cxr`.
+
+Note: you need to sign user agreements then download x-ray images from [the official website](https://physionet.org/content/mimic-cxr/2.0.0/). 
 
 ## Run on MIMIC-ABN
 
@@ -28,7 +30,7 @@ Run `bash run_mimic_cxr.sh` to train a model on the MIMIC-CXR data.
 
 
 ## Download Models
-You can download the models we trained for each dataset from [here](https://drive.google.com/drive/folders/1wokoNJHWh2IN1ywo7t-DKHicZAzwuK2-?usp=sharing).
+You can download the models we trained for each dataset from [release/pretrained_models](https://drive.google.com/drive/folders/1wokoNJHWh2IN1ywo7t-DKHicZAzwuK2-?usp=sharing).
 
 
 ## Citation
